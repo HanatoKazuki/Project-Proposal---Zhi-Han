@@ -31,12 +31,7 @@ if ($user) {
     ':password' => $hash_password
   ));
 
-  $_SESSION['user'] = [
-    'id' => $pdo->lastInsertId(),
-    'name' => $name,
-    'email' => $email
-  ];
-  $_SESSION['authenticated'] = true;
+
 
   header('Location: login.php');
   exit;

@@ -21,14 +21,26 @@ require_once __DIR__ . '/DB/database.php';
     ));
     $user = $statement->fetch(PDO::FETCH_ASSOC);
 
+
+
     if ( $user && password_verify($password,$user['password']) ){
+            $statement = $pdo->prepare("SELECT name FROM users WHERE email = :email");
+    $statement->execute(array(
+        ':email' => $email
+    ));
+    $username = $statement->fetch(PDO::FETCH_ASSOC);
+    $theName = $username['name'];
         $_SESSION['user'] = [
             'id' => $pdo->lastInsertId(),
             'email' => $email
         ];
         $_SESSION['authenticated']=true;
+        $_SESSION['user'] = [
+            'id' => $user['id'],
+            'name' => $theName
+        ];
         header("Location: home.php");
-        exit;
+        exit;   
     } else {
         $error = 'Invalid email or password.';
     };
