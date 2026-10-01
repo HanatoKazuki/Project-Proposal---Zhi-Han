@@ -78,13 +78,13 @@ The purpose of $_SESSION
 The home page design, and PHP routes & finish up the roles system.
 
 ### What I actually did
-
+Finished the home page design and added new tables while also fixes some small issue.
 
 ### Blockers / Challenges
-
+I was bother by the sql code where when I put int and varchar together it just won't work
 
 ### What I learned
-
+In sql INT and VARCHAR are not allow to put together as they are not the same data type.
 
 ---
 
