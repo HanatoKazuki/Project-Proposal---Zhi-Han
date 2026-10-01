@@ -65,17 +65,17 @@ Finish up the backend for the login and registration pages, make 3 different rol
 Finished the backend for login and registration pages.
 
 ### Blockers / Challenges
-
+The code doesn't work, it crashed, and it just keep direct to different page and end up crashed...
 
 ### What I learned
-
+The purpose of $_SESSION
 
 ---
 
 ## Day 4 — Date: 1/10/2026
 
 ### What I planned to do today
-PHP Routes
+The home page design, and PHP routes & finish up the roles system.
 
 ### What I actually did
 
