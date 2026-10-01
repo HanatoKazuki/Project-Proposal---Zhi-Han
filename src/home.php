@@ -90,6 +90,9 @@ if (empty($_SESSION['authenticated'])) {
         transition: transform 0.5s ease;
         box-sizing: border-box;
         background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .box:hover {
         transform: translate(0, -10px);
@@ -100,7 +103,7 @@ if (empty($_SESSION['authenticated'])) {
         padding: 20px;
         font-size: 28px;
         font-weight: bold;
-        margin-bottom: 0px;
+        margin: 0px;
     }
 
     .balance {
@@ -138,22 +141,22 @@ body {
 <div class="container">
     <div class="box balance" id="balance">
         <div class="balanceContent">
-        <p class="balanceTitle">Total Balance:
-            (currencySymbol)999,999,999,999
+        <p class="balanceTitle">Total Balance:<br>
+            MYR 999,999,999,999
         </p>
         </div>
     </div>
     <div class="box income" id="income">
                 <div class="balanceContent">
-        <p class="balanceTitle">💰 Income:
-            (currencySymbol)999,999,999,999
+        <p class="balanceTitle">💰 Income:<br>
+            MYR 999,999,999,999
         </p>
         </div>
     </div>
     <div class="box expense" id="expense">
                 <div class="balanceContent">
-        <p class="balanceTitle">💸 Expense:
-            (currencySymbol)999,999,999,999
+        <p class="balanceTitle">💸 Expense:<br>
+            MYR 999,999,999,999
         </p>
     </div>
 </div>
