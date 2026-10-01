@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body,html {
+        margin: 0;
+    }
+    .navbar-brand{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar-brand a {
+        text-decoration: none;
+        font-size: 32px;
+        color: white;
+    }
+
+    .navbar {
+        background-color: rgb(0, 119, 255);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-navigation{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar-navigation li {
+        margin-right: 10px;
+        font-size: 24px;
+    }
+
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand"><a href="#">Lexus</a></div>
+        <ul class="navbar-navigation">
+            <li><a>Home</a></li>
+            <li><a>Balance</a></li>
+            <li><a>Goals</a></li>
+            <li><a>Logout</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
