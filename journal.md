@@ -1,9 +1,9 @@
 # Mini Project Journal
 
-**Student Name:**
-**Project Title:**
-**Start Date:**
-**End Date:**
+**Student Name: Lee Zhi Han**
+**Project Title: Lexus The Financial Tracker **
+**Start Date: 28/9/2026**
+**End Date: 12/9/2026**
 
 ---
 
@@ -20,7 +20,7 @@
 - **Frontend: HTML,CSS,PHP**
 - **Backend: PHP**
 - **Database: MySQL**
-- **Other:**
+- **Other: Bootstrap Icon**
 
 ---
 
