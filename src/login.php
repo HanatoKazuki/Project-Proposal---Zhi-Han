@@ -37,7 +37,8 @@ require_once __DIR__ . '/DB/database.php';
         $_SESSION['authenticated']=true;
         $_SESSION['user'] = [
             'id' => $user['id'],
-            'name' => $theName
+            'name' => $theName,
+            'role' => $user['role']
         ];
         header("Location: home.php");
         exit;   

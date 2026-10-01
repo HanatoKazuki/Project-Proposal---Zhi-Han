@@ -132,6 +132,7 @@ body {
     </nav>
     <center>
     <h1>Welcome Back, <?php echo $_SESSION['user']['name']?>!</h1>
+    <h2>Role: <?php echo $_SESSION['user']['role']?></h2>
     <h2>Have a look at your financial summary.</h2>
 </center>
 <div class="container">
