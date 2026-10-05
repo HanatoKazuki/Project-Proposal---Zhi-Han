@@ -3,7 +3,7 @@ session_start();
 $error = '';  
 
 if(isset($_SESSION['authenticated']) && $_SESSION['authenticated'] ==true){
-    header('Location: home.php');
+    header('Location: /src/home');
     exit;
 };
 

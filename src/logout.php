@@ -2,7 +2,7 @@
 session_start();
 if(isset($_SESSION['authenticated']) && $_SESSION['authenticated'] ==true){
     unset($_SESSION['authenticated']);
-    header("Location: login.php");
+    header("Location: /src/login");
     exit;
 };
 

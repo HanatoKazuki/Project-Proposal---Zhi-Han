@@ -6,7 +6,6 @@ body {
     background-attachment: fixed;
     height: 90vh;
     scroll-behavior: smooth;
-    color: rgb(248, 221, 133);
 }
 .form {
     background-color: white; 
