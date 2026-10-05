@@ -91,29 +91,29 @@ In sql INT and VARCHAR are not allow to put together as they are not the same da
 ## Day 5 — Date: 2/10/2026
 
 ### What I planned to do today
-
+Remake login layout.
 
 ### What I actually did
-
+Did small changes on the login layout.
 
 ### Blockers / Challenges
-
+None
 
 ### What I learned
-
+Using box-shadow.
 
 ---
 
 ## Day 6 — Date: 3/10/2026
 
 ### What I planned to do today
-
+Remake register layout
 
 ### What I actually did
-
+Did small changes to the container of the register box.
 
 ### Blockers / Challenges
-
+None
 
 ### What I learned
 
@@ -123,13 +123,13 @@ In sql INT and VARCHAR are not allow to put together as they are not the same da
 ## Day 7 — Date: 4/10/2026
 
 ### What I planned to do today
-
+Make home page looks cleaner.
 
 ### What I actually did
-
+Edited navbar
 
 ### Blockers / Challenges
-
+Lack of ideas...
 
 ### What I learned
 
@@ -139,7 +139,7 @@ In sql INT and VARCHAR are not allow to put together as they are not the same da
 ## Day 8 — Date: 5/10/2026
 
 ### What I planned to do today
-
+PHP Routes & Remake Home Page Layout
 
 ### What I actually did
 
