@@ -33,7 +33,7 @@ if ($user) {
 
 
 
-  header('Location: login.php');
+  header('Location: /src/login');
   exit;
 };
 };

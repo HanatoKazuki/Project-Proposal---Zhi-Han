@@ -40,7 +40,7 @@ require_once __DIR__ . '/DB/database.php';
             'name' => $theName,
             'role' => $user['role']
         ];
-        header("Location: home.php");
+        header("Location: /src/home");
         exit;   
     } else {
         $error = 'Invalid email or password.';
