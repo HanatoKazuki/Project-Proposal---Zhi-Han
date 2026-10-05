@@ -142,13 +142,13 @@ Lack of ideas...
 PHP Routes & Remake Home Page Layout
 
 ### What I actually did
-
+Finished remaking home page layout, and also fixed the php routes
 
 ### Blockers / Challenges
-
+Php unable to find the correct file.
 
 ### What I learned
-
+must add the folder name before the file.
 
 ---
 
