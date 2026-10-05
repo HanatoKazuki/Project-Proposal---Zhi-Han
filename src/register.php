@@ -52,7 +52,7 @@ if ($user) {
 
 <body>
     <div class="form-container">
-        <form class="form" action="register.php" method="POST">
+        <form class="form" action="/src/register" method="POST">
             <?php if ($error): ?>
             <?php endif; ?>
             <div style=" text-align: center;">
