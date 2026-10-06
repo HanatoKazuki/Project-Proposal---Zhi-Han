@@ -155,16 +155,16 @@ must add the folder name before the file.
 ## Day 9 — Date: 6/10/2026
 
 ### What I planned to do today
-
+Make a new page for wallet section.
 
 ### What I actually did
-
+Half way through it.
 
 ### Blockers / Challenges
-
+Unable to adjust the width
 
 ### What I learned
-
+Check if got duplicate class....
 
 ---
 
