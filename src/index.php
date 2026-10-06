@@ -10,6 +10,9 @@ switch ($path) {
     case '/src/register':
         require 'register.php';
         break;
+    case '/src/wallet';
+        require 'wallet.php';
+        break;
     default:
         require '404.php';
         break;

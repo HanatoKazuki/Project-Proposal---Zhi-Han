@@ -149,15 +149,20 @@ body {
 .balanceIcon {
     font-size: 10px ;
 }
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
 </style>
 
 <body>
     <nav class="navbar">
         <div class="navbar-brand"><a href="#"><i class="bi bi-wallet2"></i> Lexus</a></div>
         <ul class="navbar-navigation">
-            <li><a class='selected'>Home</a></li>
-            <li><a>Wallet</a></li>
-            <li><a>Goals</a></li>
+            <li><a class='selected' href='#' style="text-decoration: underline;">Home</a></li>
+            <li><a href='/src/wallet'>Wallet</a></li>
+            <li><a href='#'>Goals</a></li>
             <li><a href="logout.php" id="logoutIcon" title="Logout"><i class="bi bi-door-closed" id=""></i></a></li>
         </ul>
     </nav>
