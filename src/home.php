@@ -145,6 +145,10 @@ body {
     height: 90vh;
     scroll-behavior: smooth;
 }
+
+.balanceIcon {
+    font-size: 10px ;
+}
 </style>
 
 <body>
@@ -164,6 +168,7 @@ body {
     </center>
     <div class="container">
         <div class="box balance" id="balance">
+            <div class='balanceIcon'></div>
             <div class="balanceContent">
                 <p class="balanceTitle">Total Balance</p><br>
                     <p class='amount'>MYR 999,999,999,999
@@ -171,13 +176,16 @@ body {
             </div>
         </div>
         <div class="box income" id="income">
-            <div class="balanceContent">
+                <div class='balanceIcon'></div>
+                <div class='balanceContent'>
                 <p class="balanceTitle">Income</p><br>
                    <p class='amount'> MYR 999,999,999,999
-                </p>
-            </div>
+                     </p>
+</div>
+               
         </div>
         <div class="box expense" id="expense">
+            <div class='balanceIcon'></div>
             <div class="balanceContent">
                 <p class="balanceTitle">Expense</p><br>
                     <p class='amount'>MYR 999,999,999,999
