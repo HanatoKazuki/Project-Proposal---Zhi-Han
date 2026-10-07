@@ -89,17 +89,6 @@ html {
     width: 450px;
 }
 
-.box.balance {
-    border-bottom: 10px solid lightgreen;
-}
-
-.box.income {
-    border-bottom: 10px solid rgb(127, 241, 127);
-}
-
-.box.expense {
-    border-bottom: 10px solid rgb(250, 207, 67);
-}
 
 .box {
     transition: transform 0.5s ease;
