@@ -31,6 +31,21 @@ if ($user) {
     ':password' => $hash_password
   ));
 
+  $statement = $pdo->prepare("INSERT INTO income(userID)values(:userID)");
+  $statement->execute(array(
+    ':userID' => $pdo->lastInsertID()
+  ));
+  
+    $statement = $pdo->prepare("INSERT INTO expense(userID)values(:userID)");
+  $statement->execute(array(
+    ':userID' => $pdo->lastInsertID()
+  ));
+
+      $statement = $pdo->prepare("INSERT INTO balance(userID)values(:userID)");
+  $statement->execute(array(
+    ':userID' => $pdo->lastInsertID()
+  ));
+
 
 
   header('Location: /src/login');

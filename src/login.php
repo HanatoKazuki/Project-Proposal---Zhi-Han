@@ -30,15 +30,12 @@ require_once __DIR__ . '/DB/database.php';
     ));
     $username = $statement->fetch(PDO::FETCH_ASSOC);
     $theName = $username['name'];
-        $_SESSION['user'] = [
-            'id' => $pdo->lastInsertId(),
-            'email' => $email
-        ];
         $_SESSION['authenticated']=true;
         $_SESSION['user'] = [
-            'id' => $user['id'],
+            'id' => $user['userID'],
             'name' => $theName,
-            'role' => $user['role']
+            'role' => $user['role'],
+            'email' => $email
         ];
         header("Location: /src/home");
         exit;   

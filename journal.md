@@ -171,13 +171,13 @@ Check if got duplicate class....
 ## Day 10 — Date: 7/10/2026
 
 ### What I planned to do today
-
+Finish up transcations page, and create staff pages
 
 ### What I actually did
-
+Finished transactions page.
 
 ### Blockers / Challenges
-
+Again unsure what permission for the staff pages...
 
 ### What I learned
 
@@ -187,7 +187,7 @@ Check if got duplicate class....
 ## Day 11 — Date: 8/10/2026
 
 ### What I planned to do today
-
+Instead of fixed balance, make it to true user's balance.
 
 ### What I actually did
 

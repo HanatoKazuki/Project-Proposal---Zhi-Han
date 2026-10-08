@@ -4,7 +4,36 @@ if (empty($_SESSION['authenticated'])) {
     header('Location: /src/login');
     exit;
 }
+
+require_once __DIR__ . '/DB/database.php';
+$statement = $pdo->prepare("SELECT balanceAmount FROM balance WHERE userID = :userID"); 
+$statement->execute(array( ':userID' => $_SESSION['user']['id'] )); 
+$balance = $statement->fetch(PDO::FETCH_ASSOC);
+
+$statement = $pdo->prepare("SELECT currencySymbol FROM balance WHERE userID = :userID");
+$statement->execute(array(
+    ':userID' => $_SESSION['user']['id']
+));
+$balanceSymbol = $statement->fetch(PDO::FETCH_ASSOC);
+
+$statement = $pdo->prepare("SELECT totalIncome FROM income WHERE userID = :userID");
+$statement->execute(array(
+    ':userID' => $_SESSION['user']['id']
+));
+$income = $statement->fetch(PDO::FETCH_ASSOC);
+
+$statement = $pdo->prepare("SELECT totalExpense FROM expense WHERE userID = :userID");
+$statement->execute(array(
+    ':userID' => $_SESSION['user']['id']
+));
+$expense = $statement->fetch(PDO::FETCH_ASSOC);
+
+$_SESSION['balanceAmount'] = $balance['balanceAmount'];
+$_SESSION['incomeAmount'] = $income['totalIncome'];
+$_SESSION['expenseAmount'] = $expense['totalExpense'];
+$_SESSION['currencySymbol'] = $balanceSymbol['currencySymbol'];
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -146,6 +175,7 @@ body {
 </style>
 
 <body>
+    
     <nav class="navbar">
         <div class="navbar-brand"><a href="#"><i class="bi bi-wallet2"></i> Lexus</a></div>
         <ul class="navbar-navigation">
@@ -165,7 +195,7 @@ body {
             <div class='balanceIcon'></div>
             <div class="balanceContent">
                 <p class="balanceTitle">Total Balance</p><br>
-                    <p class='amount'>MYR 999,999,999,999
+                    <p class='amount'> <?php echo  "{$balanceSymbol['currencySymbol']} " . number_format($balance['balanceAmount'])?>
                 </p>
             </div>
         </div>
@@ -173,7 +203,7 @@ body {
                 <div class='balanceIcon'></div>
                 <div class='balanceContent'>
                 <p class="balanceTitle">Income</p><br>
-                   <p class='amount'> MYR 999,999,999,999
+                   <p class='amount'> <?php echo  "{$balanceSymbol['currencySymbol']} " . number_format($income['totalIncome'])?>
                      </p>
 </div>
                
@@ -182,7 +212,7 @@ body {
             <div class='balanceIcon'></div>
             <div class="balanceContent">
                 <p class="balanceTitle">Expense</p><br>
-                    <p class='amount'>MYR 999,999,999,999
+                    <p class='amount'><?php echo  "{$balanceSymbol['currencySymbol']} " . number_format($expense['totalExpense'])?>
                 </p>
             </div>
         </div>

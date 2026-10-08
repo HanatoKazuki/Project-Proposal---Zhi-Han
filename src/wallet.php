@@ -281,7 +281,7 @@ a {
                 <div class="box balance" id="balance">
                     <div class="balanceContent">
                         <p class="balanceTitle">Total Balance</p><br>
-                        <p class='amount'>MYR 999,999,999,999
+                        <p class='amount'><?php echo "{$_SESSION['currencySymbol']} " . number_format($_SESSION['balanceAmount']) ?>
                         </p>
                     </div>
                 </div>
